@@ -1,0 +1,43 @@
+SHAMITH R. KAJAVA
+Full Stack Developer | AI Developer | Software Engineer
+Email: shamithrkajava@gmail.com | Phone: +91 98765 43210
+Mangalore, Karnataka, India
+
+=========================================
+PROFESSIONAL SUMMARY
+=========================================
+BCA graduate specializing in Software Development & Web Design with experience building AI-powered applications and scalable full-stack web solutions. Passionate about software engineering, agentic AI systems, and creating clean, responsive user interfaces.
+
+=========================================
+EDUCATION
+=========================================
+Bachelor of Computer Applications (BCA)
+Specialization: Software Development & Web Design
+Srinivas University
+2023 - 2026
+
+=========================================
+CORE SKILLS
+=========================================
+* Languages: Java, JavaScript, Python, SQL, HTML, CSS
+* Frontend: React, Redux Toolkit, Vite, Bootstrap, Tailwind CSS
+* Backend: Node.js, Express.js, FastAPI, REST APIs
+* Databases: MySQL, SQLite, SQLAlchemy
+* Artificial Intelligence: LangGraph, LangChain, Groq LLM, Prompt Engineering
+* Tools: Git, GitHub, Postman, VS Code
+
+=========================================
+FEATURED PROJECTS
+=========================================
+1. AI-Powered CRM Co-Pilot for HCP Interactions
+   * Description: An AI-first CRM featuring AI Chat Co-Pilot, Entity Extraction, Sentiment Analysis, and Next Best Action recommendations using React, FastAPI, LangGraph, and Groq LLM.
+
+2. MediEase – Online Medicine Ordering & Delivery System
+   * Description: A full-stack healthcare platform with authentication, medicine management, appointment booking, admin dashboard, and REST APIs.
+
+=========================================
+CERTIFICATIONS
+=========================================
+* Infosys Springboard Certification
+* Deloitte Technology Job Simulation
+* IBM SkillsBuild Professional Credentials
