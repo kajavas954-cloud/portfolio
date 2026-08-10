@@ -20,7 +20,7 @@ export default function Footer() {
 
         {/* Mid Copyright message */}
         <div className="text-xs text-gray-500 text-center font-mono">
-          © {new Date().getFullYear()} Kajava.dev. All rights reserved.
+          © {new Date().getFullYear()} Shamith .R .kajava. All rights reserved.
           <span className="block md:inline md:ml-4 text-gray-600 mt-1 md:mt-0">
             Designed & Developed by Shamith R. Kajava
           </span>

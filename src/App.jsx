@@ -13,7 +13,6 @@ import Footer from './components/Footer';
 
 // Live Product Components
 import AIAssistant from './components/AIAssistant';
-import RecruiterTracker from './components/RecruiterTracker';
 
 export default function App() {
   // Real-time Recruiter Analytics Metrics
@@ -105,9 +104,6 @@ export default function App() {
 
       {/* Navigation Overlay */}
       <Navbar />
-
-      {/* Recruiter Engagement Tracker Panel */}
-      <RecruiterTracker trackerStats={trackerStats} />
 
       {/* AI Chat Assistant Co-Pilot Widget */}
       <AIAssistant onInteraction={trackChatQuery} />
