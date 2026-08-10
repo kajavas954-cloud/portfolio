@@ -231,7 +231,7 @@ export default function Contact({ onSuccess, onInteraction }) {
           {/* Social connections */}
           <div className="flex gap-4 items-center">
             <a
-              href="https://github.com"
+              href="https://github.com/kajavas954-cloud"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => onInteraction && onInteraction()}
@@ -240,7 +240,7 @@ export default function Contact({ onSuccess, onInteraction }) {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/shamithrkajava"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => onInteraction && onInteraction()}

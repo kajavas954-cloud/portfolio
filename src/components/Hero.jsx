@@ -197,7 +197,7 @@ export default function Hero() {
           className="flex items-center gap-6"
         >
           <a
-            href="https://github.com"
+            href="https://github.com/kajavas954-cloud"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-brand-purple hover:scale-110 transition duration-300"
@@ -205,7 +205,7 @@ export default function Hero() {
             <Github className="w-6 h-6" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/shamithrkajava"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-brand-blue hover:scale-110 transition duration-300"
