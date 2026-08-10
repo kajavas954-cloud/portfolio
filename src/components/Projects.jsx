@@ -17,7 +17,7 @@ const projects = [
       'React Dashboard: Fully responsive analytics view.'
     ],
     tech: ['React', 'FastAPI', 'LangGraph', 'Groq LLM', 'Tailwind CSS', 'SQLAlchemy'],
-    github: 'https://github.com/kajavas954-cloud/ai-crm-copilot',
+    github: 'https://github.com/kajavas954-cloud/hcp_project',
     demo: 'https://demo.com',
     visualizer: 'crm',
     details: {
@@ -40,7 +40,7 @@ const projects = [
       'Responsive UI: Fluid experience across small phones to desktops.'
     ],
     tech: ['React', 'Node.js', 'Express.js', 'MySQL', 'Bootstrap', 'REST APIs'],
-    github: 'https://github.com/kajavas954-cloud/mediease-platform',
+    github: 'https://github.com/kajavas954-cloud/medease',
     demo: 'https://demo.com',
     visualizer: 'mediease',
     details: {
