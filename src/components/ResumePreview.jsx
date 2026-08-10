@@ -47,10 +47,7 @@ export default function ResumePreview({ onDownloadClick }) {
           transition={{ duration: 0.6 }}
           className="lg:col-span-8 bg-[#0b081e]/80 border border-white/5 p-6 md:p-8 rounded-2xl shadow-xl relative overflow-hidden group select-none hover:border-brand-purple/15 transition-all duration-300"
         >
-          {/* Decorative stamp watermark */}
-          <div className="absolute top-6 right-6 w-24 h-24 bg-white/2 rounded-full border border-white/5 flex items-center justify-center pointer-events-none transform rotate-12">
-            <span className="font-mono text-[8px] text-gray-500 font-bold text-center leading-tight">KAJAVA.DEV<br />VERIFIED</span>
-          </div>
+
 
           <div className="space-y-6 text-left">
             {/* Header Block */}

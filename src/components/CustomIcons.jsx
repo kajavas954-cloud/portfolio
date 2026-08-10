@@ -27,8 +27,13 @@ export const Linkedin = (props) => (
     className={props.className || "w-5 h-5"}
     {...props}
   >
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect x="2" y="9" width="4" height="12" />
-    <circle cx="4" cy="4" r="2" />
+    {/* Rounded outer box standard for LinkedIn brand */}
+    <rect x="2" y="2" width="20" height="20" rx="4" ry="4" />
+    {/* Lowercase 'i' */}
+    <line x1="8" y1="11" x2="8" y2="17" />
+    <circle cx="8" cy="7.5" r="1.2" fill="currentColor" stroke="none" />
+    {/* Lowercase 'n' */}
+    <path d="M12 11v6" />
+    <path d="M12 11a3 3 0 0 1 6 0v6" />
   </svg>
 );
