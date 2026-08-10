@@ -16,16 +16,20 @@ const knowledgeBase = {
   skills: "Shamith's core skillset is divided into:\n\n* **Frontend**: React.js, JavaScript (ES6+), HTML5, CSS3.\n* **Backend**: Node.js, Express.js, REST APIs, JWT Authentication.\n* **Database**: MySQL, MongoDB (Basic).\n* **Tools & Platforms**: Git, GitHub, VS Code, Postman, npm.",
   crm: "His **AI-Powered CRM Co-Pilot for HCP Interactions** is an AI-first CRM built with React, FastAPI, LangGraph, and Groq LLM (Gemma 2-9B-IT). It features a conversational AI Chat Co-Pilot, automated entity extraction from transcripts, sentiment analysis, and machine-learning-based Next Best Action recommendations to optimize physician-representative interactions.",
   mediease: "His **MediEase – Online Medicine Ordering & Delivery System** is a full-stack platform built with React, Node.js, Express.js, and MySQL. It features user authentication, catalog searching, prescription medicine ordering, doctor appointment scheduling, and an administrative control panel to manage stocks and clinic bookings.",
+  leadflow: "His **LeadFlow-CRM** is a full-stack Customer Relationship Management application built with React.js, Node.js, Express.js, and MySQL. It features lead and customer data management, full CRUD operations, custom REST API integration, and responsive data flows.",
+  blog: "His **Codomax Blog Application** is a full-stack blog platform developed during his Codomax internship. He built responsive dashboard views, Node.js/Express.js backend endpoints, user authentication, and MongoDB storage connectivity integrated through Mongoose.",
   hire: "You should hire Shamith because he bridges the gap between modern Full Stack engineering and cognitive AI development. He is a fresher who has already built multi-agent LangGraph pipelines, designed production-ready Express backends, and implemented secure Nodemailer contact networks. He is eager to learn, adaptable, and immediately ready to deliver value.",
   education: "Shamith is pursuing a Bachelor of Computer Applications (BCA) in Software Development & Web Design at Srinivas University, Mangalore (2023–2026). He has maintained outstanding academic records in algorithmic studies and database management.",
   availability: "Shamith is seeking Full Stack Developer, Software Engineer, Frontend Developer, or Backend Developer opportunities. He is ready to relocate or work remotely and is available for interviews immediately.",
   internship: "Shamith completed a 1-month Full Stack Development Internship at **Codomax Digital Solutions**. He upgraded a Blog Application from local storage to a full-stack system using React.js, Node.js, Express.js, and MongoDB (via Mongoose), building authentication & CRUD REST APIs, managing database migrations, and debugging the integration. He received a **Letter of Recommendation** for his high-quality contributions.",
-  default: "I can help you audit Shamith's credentials! Feel free to ask about his skills, education, internship experience, AI CRM project, MediEase project, availability, or contact information."
+  default: "I can help you audit Shamith's credentials! Feel free to ask about his skills, education, internship experience, projects (AI CRM, MediEase, LeadFlow-CRM, Codomax Blog), availability, or contact information."
 };
 
 const getResponse = (query) => {
   const q = query.toLowerCase();
-  if (q.includes('internship') || q.includes('experience') || q.includes('work') || q.includes('codomax')) return knowledgeBase.internship;
+  if (q.includes('internship') || q.includes('experience') || q.includes('work') || q.includes('codomax') && !q.includes('blog')) return knowledgeBase.internship;
+  if (q.includes('blog') || q.includes('codomax blog')) return knowledgeBase.blog;
+  if (q.includes('leadflow') || q.includes('lead flow') || q.includes('crm') && q.includes('lead')) return knowledgeBase.leadflow;
   if (q.includes('about') || q.includes('who is') || q.includes('shamith') && !q.includes('hire') && !q.includes('skill')) return knowledgeBase.about;
   if (q.includes('skill') || q.includes('technolog') || q.includes('framework') || q.includes('language')) return knowledgeBase.skills;
   if (q.includes('crm') || q.includes('co-pilot') || q.includes('hcp') || q.includes('ai-powered crm')) return knowledgeBase.crm;

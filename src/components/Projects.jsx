@@ -49,6 +49,50 @@ const projects = [
       challenge: 'Concurrent users placing simultaneous medicine orders triggered transactional race conditions, leading to inventory discrepancies (negative stock counts).',
       solution: 'Configured transaction isolation levels to "Serializable" and implemented pessimistic row locking ("SELECT ... FOR UPDATE") in MySQL checkout queries, forcing execution queues to block and verify counts before updating stocks.'
     }
+  },
+  {
+    id: 3,
+    title: 'Full-Stack CRM Application (LeadFlow-CRM)',
+    description: 'LeadFlow-CRM is a full-stack customer relationship management application designed to organize and manage lead and customer information. It demonstrates frontend development, backend integration, data management, CRUD operations, and responsive UI development.',
+    features: [
+      'Lead Management: Organize, track, and search lead and customer records.',
+      'CRUD Operations: Manage database lifecycle of users and sales contacts.',
+      'REST API Integration: Direct data exchange via custom Express routing.',
+      'Responsive Interface: Modern dashboard UI rendering seamlessly across devices.',
+      'Data Flow: Secure full-stack pipeline from React frontend to MySQL backend.'
+    ],
+    tech: ['React.js', 'Node.js', 'Express.js', 'MySQL', 'REST APIs', 'HTML5', 'CSS3'],
+    github: 'https://github.com/kajavas954-cloud/LeadFlow-CRM',
+    demo: 'https://demo.com',
+    visualizer: 'leadflow',
+    details: {
+      architecture: 'React (Client State) ⇆ Express.js REST Endpoint Middleware ⇆ SQL/MySQL Database Connection Pooler',
+      database: 'MySQL relational schema containing Leads, Customer Contacts, Interaction Logs, and Pipeline stages.',
+      challenge: 'Managing state and synchronization when multiple operators update the lead pipeline stage simultaneously, leading to overlapping action schedules.',
+      solution: 'Implemented optimistic concurrency control using version columns in MySQL and handled state updates gracefully in the React client context by prompting manual merge-resolutions on conflicts.'
+    }
+  },
+  {
+    id: 4,
+    title: 'Codomax Blog Application',
+    description: 'A responsive full-stack blog platform developed during my Codomax internship, featuring authentication, blog CRUD operations, REST APIs, and MongoDB/Mongoose integration.',
+    features: [
+      'Dashboard UI: Designed responsive Home, Login, Register, Dashboard, and Create pages.',
+      'REST APIs: Custom Node.js and Express backend API operations.',
+      'User Authentication: Secure login session tracking and verification.',
+      'Mongoose ODM: Integrated MongoDB schema modeling and database controls.',
+      'Config Protection: Structured .env integration with MongoDB Compass audit workflows.'
+    ],
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'REST APIs', 'Git'],
+    github: 'https://github.com/kajavas954-cloud/Codomax-Project-Development',
+    demo: 'https://demo.com',
+    visualizer: 'blog',
+    details: {
+      architecture: 'React.js (Axios Client) ⇆ Node.js / Express Server ⇆ MongoDB Atlas (via Mongoose ODM)',
+      database: 'MongoDB document store with optimized indexes on Author IDs, Blog Post Categories, and Timestamp fields.',
+      challenge: 'Initially, the blog post loading had high latency when loading long text descriptions and comments lists sequentially.',
+      solution: 'Implemented cursor-based pagination and selected only required fields (title, summary, date, author) in the initial index query using Mongoose query projection, boosting loading speed by 70%.'
+    }
   }
 ];
 
@@ -111,7 +155,7 @@ export default function Projects() {
 
               {/* Dynamic Interactive UI */}
               <div className="my-auto flex flex-col justify-center items-center gap-2 z-10 w-full">
-                {proj.visualizer === 'crm' ? (
+                {proj.visualizer === 'crm' && (
                   <div className="w-full max-w-sm space-y-2 select-none">
                     {/* Simulated CRM Interface */}
                     <div className="flex items-center justify-between bg-white/5 p-2 rounded-lg border border-white/5">
@@ -131,7 +175,8 @@ export default function Projects() {
                       </div>
                     </div>
                   </div>
-                ) : (
+                )}
+                {proj.visualizer === 'mediease' && (
                   <div className="w-full max-w-sm space-y-2 select-none">
                     {/* Simulated MediEase Interface */}
                     <div className="flex items-center justify-between bg-white/5 p-2 rounded-lg border border-white/5">
@@ -149,6 +194,43 @@ export default function Projects() {
                           <div className="text-[8px] text-brand-blue font-bold">Qty: {120 - i*20}</div>
                         </div>
                       ))}
+                    </div>
+                  </div>
+                )}
+                {proj.visualizer === 'leadflow' && (
+                  <div className="w-full max-w-sm space-y-2 select-none">
+                    {/* Simulated LeadFlow Interface */}
+                    <div className="flex items-center justify-between bg-white/5 p-2 rounded-lg border border-white/5">
+                      <div className="flex items-center gap-2">
+                        <FolderGit2 className="w-4 h-4 text-brand-purple" />
+                        <span className="text-[11px] font-mono text-gray-300 font-semibold">LeadFlow Pipeline</span>
+                      </div>
+                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-mono">DB: Connected</span>
+                    </div>
+                    {/* Sales funnel simulation */}
+                    <div className="grid grid-cols-3 gap-2">
+                      {['New Leads', 'Contacted', 'Converted'].map((status, i) => (
+                        <div key={i} className="bg-white/3 p-1.5 rounded border border-white/5 text-[9px] font-mono text-center text-gray-400">
+                          {status}
+                          <div className="text-[8px] text-brand-purple font-bold">Count: {45 - i*15}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {proj.visualizer === 'blog' && (
+                  <div className="w-full max-w-sm space-y-2 select-none">
+                    {/* Simulated Codomax Blog Interface */}
+                    <div className="flex items-center justify-between bg-white/5 p-2 rounded-lg border border-white/5">
+                      <div className="flex items-center gap-2">
+                        <Terminal className="w-4 h-4 text-emerald-400" />
+                        <span className="text-[11px] font-mono text-gray-300 font-semibold">Codomax Blog API</span>
+                      </div>
+                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 font-mono">MongoDB: Online</span>
+                    </div>
+                    <div className="bg-white/3 p-2 rounded border border-white/5 text-[9px] font-mono text-gray-400 w-full flex items-center justify-between">
+                      <span>Active posts: 24</span>
+                      <span className="text-brand-blue font-bold">Total users: 184</span>
                     </div>
                   </div>
                 )}
