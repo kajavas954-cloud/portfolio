@@ -80,11 +80,10 @@ export default function ResumePreview({ onDownloadClick }) {
               <div className="space-y-2">
                 <h4 className="text-xs font-bold font-mono text-brand-blue uppercase tracking-widest">Technical Skills</h4>
                 <div className="space-y-1.5 text-[11px] text-gray-400">
-                  <div><strong className="text-gray-300 font-mono">Languages:</strong> Java, JavaScript, Python, SQL, HTML, CSS</div>
-                  <div><strong className="text-gray-300 font-mono">Frontend:</strong> React.js, Redux Toolkit, Vite, Bootstrap, Tailwind CSS</div>
-                  <div><strong className="text-gray-300 font-mono">Backend:</strong> FastAPI, Node.js, Express.js, REST APIs</div>
-                  <div><strong className="text-gray-300 font-mono">Database:</strong> MySQL, SQLite, SQLAlchemy</div>
-                  <div><strong className="text-gray-300 font-mono">AI & Tools:</strong> LangGraph, LangChain, Groq (Gemma 2-9B-IT), Git, GitHub, Postman, VS Code</div>
+                  <div><strong className="text-gray-300 font-mono">Frontend:</strong> React.js, JavaScript (ES6+), HTML5, CSS3.</div>
+                  <div><strong className="text-gray-300 font-mono">Backend:</strong> Node.js, Express.js, REST APIs, JWT Authentication.</div>
+                  <div><strong className="text-gray-300 font-mono">Database:</strong> MySQL, MongoDB (Basic).</div>
+                  <div><strong className="text-gray-300 font-mono">Tools & Platforms:</strong> Git, GitHub, VS Code, Postman, npm.</div>
                 </div>
               </div>
 

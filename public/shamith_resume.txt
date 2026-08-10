@@ -19,12 +19,10 @@ Srinivas University
 =========================================
 CORE SKILLS
 =========================================
-* Languages: Java, JavaScript, Python, SQL, HTML, CSS
-* Frontend: React, Redux Toolkit, Vite, Bootstrap, Tailwind CSS
-* Backend: Node.js, Express.js, FastAPI, REST APIs
-* Databases: MySQL, SQLite, SQLAlchemy
-* Artificial Intelligence: LangGraph, LangChain, Groq LLM, Prompt Engineering
-* Tools: Git, GitHub, Postman, VS Code
+* Frontend: React.js, JavaScript (ES6+), HTML5, CSS3
+* Backend: Node.js, Express.js, REST APIs, JWT Authentication
+* Database: MySQL, MongoDB (Basic)
+* Tools & Platforms: Git, GitHub, VS Code, Postman, npm
 
 =========================================
 FEATURED PROJECTS

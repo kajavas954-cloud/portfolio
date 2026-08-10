@@ -1,43 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Layers, Code2, MonitorPlay, Server, Database, BrainCircuit, Wrench, Sparkles } from 'lucide-react';
+import { Layers, MonitorPlay, Server, Database, Wrench, Sparkles } from 'lucide-react';
 
 const skillCategories = [
-  {
-    title: 'Languages',
-    icon: Code2,
-    color: 'text-brand-purple border-brand-purple/20 bg-brand-purple/5',
-    skills: ['Java', 'JavaScript', 'Python', 'SQL', 'HTML5', 'CSS3'],
-  },
   {
     title: 'Frontend',
     icon: MonitorPlay,
     color: 'text-brand-blue border-brand-blue/20 bg-brand-blue/5',
-    skills: ['React', 'Redux Toolkit', 'Vite', 'Tailwind CSS', 'Bootstrap'],
+    skills: ['React.js', 'JavaScript (ES6+)', 'HTML5', 'CSS3'],
   },
   {
     title: 'Backend',
     icon: Server,
     color: 'text-rose-400 border-rose-400/20 bg-rose-400/5',
-    skills: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs'],
+    skills: ['Node.js', 'Express.js', 'REST APIs', 'JWT Authentication'],
   },
   {
     title: 'Database',
     icon: Database,
     color: 'text-amber-400 border-amber-400/20 bg-amber-400/5',
-    skills: ['MySQL', 'SQLite', 'SQLAlchemy'],
+    skills: ['MySQL', 'MongoDB (Basic)'],
   },
   {
-    title: 'Artificial Intelligence',
-    icon: BrainCircuit,
-    color: 'text-emerald-400 border-emerald-400/20 bg-emerald-400/5',
-    skills: ['LangGraph', 'LangChain', 'Groq LLM', 'Prompt Engineering'],
-  },
-  {
-    title: 'Tools & Workflow',
+    title: 'Tools & Platforms',
     icon: Wrench,
     color: 'text-cyan-400 border-cyan-400/20 bg-cyan-400/5',
-    skills: ['Git', 'GitHub', 'Postman', 'VS Code'],
+    skills: ['Git', 'GitHub', 'VS Code', 'Postman', 'npm'],
   },
 ];
 
