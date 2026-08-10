@@ -63,7 +63,7 @@ export default function Navbar() {
             className="flex items-center gap-2 text-xl font-bold tracking-tight text-white hover:opacity-80 transition cursor-pointer"
           >
             <Terminal className="w-6 h-6 text-brand-purple" />
-            <span>shamith<span className="text-brand-blue">.dev</span></span>
+            <span>Shamith R. Kajava</span>
           </button>
 
           {/* Desktop Nav */}
