@@ -197,19 +197,11 @@ export default function Projects() {
                     href={proj.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="p-2 rounded-lg bg-white/3 hover:bg-white/7 border border-white/5 text-gray-400 hover:text-white transition cursor-pointer"
                     title="View GitHub Repository"
                   >
                     <Github className="w-4.5 h-4.5" />
-                  </a>
-                  <a
-                    href={proj.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg bg-white/3 hover:bg-white/7 border border-white/5 text-gray-400 hover:text-white transition cursor-pointer"
-                    title="Live Simulation Demo"
-                  >
-                    <ExternalLink className="w-4.5 h-4.5" />
                   </a>
                 </div>
               </div>
@@ -321,19 +313,11 @@ export default function Projects() {
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="px-4 py-2 text-xs font-semibold rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white transition flex items-center gap-1.5 cursor-pointer"
                   >
                     <Github className="w-4 h-4" />
                     Source Code
-                  </a>
-                  <a
-                    href={selectedProject.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 text-xs font-semibold rounded-lg bg-brand-purple hover:bg-brand-purple/90 text-white transition flex items-center gap-1.5 cursor-pointer"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    Live Simulation
                   </a>
                 </div>
               </div>
