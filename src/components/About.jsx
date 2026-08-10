@@ -10,6 +10,13 @@ const stats = [
 
 const timeline = [
   {
+    title: 'Full Stack Development Intern',
+    period: 'August 2026',
+    description: 'Interned at Codomax Digital Solutions. Developed a full-stack Blog Application with React.js, Node.js, Express.js, and MongoDB. Integrated CRUD REST APIs, managed database migrations using Mongoose, and debugged end-to-end workflows.',
+    icon: Code2,
+    color: 'text-rose-400 bg-rose-400/10',
+  },
+  {
     title: 'AI Development Exploration',
     period: '2025 – Present',
     description: 'Explored agentic AI frameworks such as LangGraph and LangChain. Integrated Groq LLM API and built advanced cognitive application architectures featuring entity extraction and next best action systems.',

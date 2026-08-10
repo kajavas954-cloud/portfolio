@@ -107,13 +107,32 @@ export default function ResumePreview({ onDownloadClick }) {
               </div>
             </div>
 
+            {/* Work Experience */}
+            <div className="space-y-2 pt-4 border-t border-white/5">
+              <h4 className="text-xs font-bold font-mono text-brand-blue uppercase tracking-widest">Work Experience</h4>
+              <div className="space-y-3 text-[11px] text-gray-400">
+                <div>
+                  <div className="flex justify-between items-start">
+                    <span className="font-bold text-gray-200">Full Stack Development Intern</span>
+                    <span className="text-[10px] text-gray-500 font-mono">August 2026 (1 Month)</span>
+                  </div>
+                  <div className="text-[10px] text-brand-purple font-mono">Codomax Digital Solutions</div>
+                  <ul className="list-disc pl-4 text-[10px] text-gray-400 space-y-1 mt-1 leading-normal">
+                    <li>Developed and enhanced a responsive React.js Blog Application and integrated it with a Node.js/Express.js backend.</li>
+                    <li>Built REST APIs for authentication and blog CRUD operations and connected frontend workflows using Fetch API.</li>
+                    <li>Migrated persistent storage to MongoDB using Mongoose, configured database connectivity, and verified data in MongoDB Compass.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
             {/* Certifications summary */}
-            <div className="space-y-2 pt-2 border-t border-white/5">
+            <div className="space-y-2 pt-4 border-t border-white/5">
               <h4 className="text-xs font-bold font-mono text-brand-blue uppercase tracking-widest">Credentials Summary</h4>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-1.5 text-[10px] text-gray-400 list-disc pl-4">
+                <li>Codomax Solutions (Full Stack Internship & LOR)</li>
                 <li>Infosys Springboard (Introduction to Python)</li>
                 <li>Deloitte Technology Job Simulation (Data Analytics)</li>
-                <li>IBM SkillsBuild Credentials (Emerging Tech Foundations)</li>
                 <li>Anthropic / Skilljar (Claude Code in Action)</li>
               </ul>
             </div>

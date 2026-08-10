@@ -25,6 +25,17 @@ CORE SKILLS
 * Tools & Platforms: Git, GitHub, VS Code, Postman, npm
 
 =========================================
+WORK EXPERIENCE
+=========================================
+Full Stack Development Intern
+Codomax Digital Solutions | August 2026 (1 Month)
+* Developed and enhanced a responsive React.js Blog Application and integrated it with a Node.js/Express.js backend.
+* Built REST APIs for authentication and blog CRUD operations and connected frontend workflows using Fetch API.
+* Migrated persistent storage to MongoDB using Mongoose, configured database connectivity, and verified data in MongoDB Compass.
+* Debugged and tested frontend, API, and database workflows while improving application responsiveness.
+* Received a Letter of Recommendation for successful internship completion.
+
+=========================================
 FEATURED PROJECTS
 =========================================
 1. AI-Powered CRM Co-Pilot for HCP Interactions

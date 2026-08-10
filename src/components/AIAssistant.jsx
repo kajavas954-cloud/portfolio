@@ -19,11 +19,13 @@ const knowledgeBase = {
   hire: "You should hire Shamith because he bridges the gap between modern Full Stack engineering and cognitive AI development. He is a fresher who has already built multi-agent LangGraph pipelines, designed production-ready Express backends, and implemented secure Nodemailer contact networks. He is eager to learn, adaptable, and immediately ready to deliver value.",
   education: "Shamith is pursuing a Bachelor of Computer Applications (BCA) in Software Development & Web Design at Srinivas University, Mangalore (2023–2026). He has maintained outstanding academic records in algorithmic studies and database management.",
   availability: "Shamith is seeking Full Stack Developer, Software Engineer, Frontend Developer, or Backend Developer opportunities. He is ready to relocate or work remotely and is available for interviews immediately.",
-  default: "I can help you audit Shamith's credentials! Feel free to ask about his skills, education, AI CRM project, MediEase project, availability, or contact information."
+  internship: "Shamith completed a 1-month Full Stack Development Internship at **Codomax Digital Solutions**. He upgraded a Blog Application from local storage to a full-stack system using React.js, Node.js, Express.js, and MongoDB (via Mongoose), building authentication & CRUD REST APIs, managing database migrations, and debugging the integration. He received a **Letter of Recommendation** for his high-quality contributions.",
+  default: "I can help you audit Shamith's credentials! Feel free to ask about his skills, education, internship experience, AI CRM project, MediEase project, availability, or contact information."
 };
 
 const getResponse = (query) => {
   const q = query.toLowerCase();
+  if (q.includes('internship') || q.includes('experience') || q.includes('work') || q.includes('codomax')) return knowledgeBase.internship;
   if (q.includes('about') || q.includes('who is') || q.includes('shamith') && !q.includes('hire') && !q.includes('skill')) return knowledgeBase.about;
   if (q.includes('skill') || q.includes('technolog') || q.includes('framework') || q.includes('language')) return knowledgeBase.skills;
   if (q.includes('crm') || q.includes('co-pilot') || q.includes('hcp') || q.includes('ai-powered crm')) return knowledgeBase.crm;

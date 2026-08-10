@@ -63,6 +63,16 @@ const certifications = [
     gradient: 'from-cyan-500/20 to-sky-500/20',
     fileUrl: '/certificates/lloyds_ux_design.pdf',
   },
+  {
+    title: 'Full Stack Development Internship Completion & Letter of Recommendation',
+    issuer: 'Codomax Digital Solutions',
+    id: 'COD-INT-2026-08',
+    date: 'August 2026',
+    skills: 'React.js, Node.js, Express.js, MongoDB, Mongoose, REST APIs, Git, GitHub',
+    color: 'border-emerald-400/20 bg-emerald-400/5 text-emerald-400',
+    gradient: 'from-emerald-500/20 to-teal-500/20',
+    fileUrl: '/certificates/codomax_recommendation.pdf',
+  },
 ];
 
 export default function EducationCertifications() {
